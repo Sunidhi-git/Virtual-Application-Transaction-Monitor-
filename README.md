@@ -23,23 +23,18 @@ The Virtual Application Transaction Monitor is a Robotic Process Automation (RPA
 
 User Input
     │
-    ▼
 UiPath Robot
     │
-    ▼
 Virtual Banking Application
     │
-    ▼
 Transaction Processing
     │
-    ▼
 Transaction Validation
     │
     ├── Successful Transaction
     ├── Insufficient Balance
     └── Transaction Limit Exceeded
     │
-    ▼
 Transaction ID Capture & Display
 
 ## Methodology
@@ -70,25 +65,21 @@ Transaction ID Capture & Display
 **Description:**  
 The transaction is processed successfully when sufficient balance is available and the transaction amount is within the allowed limit.
 
-![Successful Transaction](Screenshots/Successful_Transaction.png)
-
----
+![Successful Transaction](.screenshots/Successful_Transaction.png)
 
 ### 2. Insufficient Balance
 
 **Description:**  
 The transaction is rejected when the account balance is lower than the requested transaction amount.
 
-![Insufficient Balance](Screenshots/Insufficient_Balance.png)
-
----
+![Insufficient Balance](.screenshots/Insufficient_Balance.png)
 
 ### 3. Transaction Limit Exceeded
 
 **Description:**  
 The transaction is rejected when the entered amount exceeds the maximum transaction limit allowed by the system.
 
-![Transaction Limit Exceeded](Screenshots/Transaction_Limit_Exceeded.png)
+![Transaction Limit Exceeded](.screenshots/Successful_Transaction.png)
 
 
 ## Expected Outcome
@@ -99,16 +90,13 @@ The transaction is rejected when the entered amount exceeds the maximum transact
 - Proper handling of transaction limit violations.
 - Improved efficiency through automation.
 
----
-
 ## Conclusion
 
 The Virtual Application Transaction Monitor successfully automates banking transactions in a virtual environment. The bot accurately captures Transaction IDs for successful transactions and appropriately handles error conditions such as insufficient balance and transaction limit exceeded, demonstrating the effectiveness of UiPath-based automation.
 
 ## Author
 
-**Sunidhi Datta**
+Sunidhi Datta
 
-Bachelor of Engineering 
 
 This project is developed for educational and academic purposes.
