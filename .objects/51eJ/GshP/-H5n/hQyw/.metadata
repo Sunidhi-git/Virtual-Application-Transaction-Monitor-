@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Transaction Type(3)",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "hQywKqu5EEikuB-VoZVJXQ",
+  "Reference": "JSRJTH-AA0G_ao_gmMknsg/hQywKqu5EEikuB-VoZVJXQ",
+  "ParentRef": "JSRJTH-AA0G_ao_gmMknsg/-H5nEKv4wUWYBbNDvKIVhg",
+  "Created": "2026-03-30T07:52:25.3373951Z",
+  "Updated": "2026-03-30T07:52:25.3373951Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

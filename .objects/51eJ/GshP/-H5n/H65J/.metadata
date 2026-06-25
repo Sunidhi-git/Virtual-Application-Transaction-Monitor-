@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Login to Terminal",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "H65JOJjugUmyIcI1myuOkw",
+  "Reference": "JSRJTH-AA0G_ao_gmMknsg/H65JOJjugUmyIcI1myuOkw",
+  "ParentRef": "JSRJTH-AA0G_ao_gmMknsg/-H5nEKv4wUWYBbNDvKIVhg",
+  "Created": "2026-03-22T09:02:55.0160029Z",
+  "Updated": "2026-03-22T09:02:55.0160029Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

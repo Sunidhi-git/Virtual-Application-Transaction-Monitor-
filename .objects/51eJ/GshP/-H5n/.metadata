@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome SecureBank  RPA Virtual Terminal",
+  "Type": "Screen",
+  "Id": "-H5nEKv4wUWYBbNDvKIVhg",
+  "Reference": "JSRJTH-AA0G_ao_gmMknsg/-H5nEKv4wUWYBbNDvKIVhg",
+  "ParentRef": "JSRJTH-AA0G_ao_gmMknsg/GshPulxUGk-YbU4e4v3k0w",
+  "Created": "2026-03-22T08:22:05.3147302Z",
+  "Updated": "2026-03-22T08:22:05.3147302Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,380 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1116.4,4828.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd2:DataTable" Name="dtData" />
+      <Variable x:TypeArguments="x:String" Name="txnID" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome SecureBank  RPA Virtual Terminal(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="627.2,4805.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_9" InteractionMode="DebuggerApi" ScopeGuid="07bc3fbc-510e-4dfb-965c-3560f67edcd4" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="625.6,4612" sap2010:WorkflowViewState.IdRef="Sequence_38">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="592,4552" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_4">
+              <ueab:ExcelProcessScopeX.Body>
+                <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="590.4,4482.4" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="556.8,4422.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_5" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="C:\Users\sunid\Downloads\transactions.xlsx">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="555.2,4203.2" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="521.6,168.8" sap2010:WorkflowViewState.IdRef="ReadRangeX_5" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" SaveTo="[dtData]" />
+                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="521.6,3974.4" sap2010:WorkflowViewState.IdRef="ForEachRow_6">
+                              <ui:ForEachRow.Body>
+                                <ActivityAction x:TypeArguments="sd2:DataRow">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="sd2:DataRow" Name="CurrentRow" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="520,3801.6" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT user'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,296.8" sap2010:WorkflowViewState.IdRef="NTypeInto_40" InteractionMode="SameAsCard" ScopeIdentifier="07bc3fbc-510e-4dfb-965c-3560f67edcd4" Text="[CurrentRow(&quot;Username&quot;).ToString]" Version="V5">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="127.0.0.1/bank.html" ContentHash="m_yAGxm1mkmfjOYQyOH1uQ" DesignTimeRectangle="730, 642, 478, 72" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='user' tag='INPUT' /&gt;" Guid="168201f8-d496-4456-81de-2dbbc3131f18" InformativeScreenshot="040c254ab2a0e5cee8f47efaf4932e5d.jpg" Reference="JSRJTH-AA0G_ao_gmMknsg/wk4BOm6wTEa36TFbUf3sSg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SecureBank | RPA Virtual Terminal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                      <uix:NTypeInto.VerifyOptions>
+                                        <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                            <InArgument x:TypeArguments="x:Boolean" />
+                                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                        </uix:VerifyExecutionTypeIntoOptions>
+                                      </uix:NTypeInto.VerifyOptions>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT pass'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,296.8" sap2010:WorkflowViewState.IdRef="NTypeInto_41" InteractionMode="SameAsCard" ScopeIdentifier="07bc3fbc-510e-4dfb-965c-3560f67edcd4" Text="[CurrentRow(&quot;Password&quot;).ToString]" Version="V5">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="127.0.0.1/bank.html" ContentHash="aogygdlddEOwKKAlcxUkzA" DesignTimeRectangle="730, 735, 478, 72" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='pass' tag='INPUT' /&gt;" Guid="e15f50e0-8cbd-41ce-b737-d7956cf974c2" InformativeScreenshot="785fa8fdeb95dc31715425fe09255b3a.jpg" Reference="JSRJTH-AA0G_ao_gmMknsg/Q0agnp7qOUWJIcjanIa2wQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SecureBank | RPA Virtual Terminal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                      <uix:NTypeInto.VerifyOptions>
+                                        <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                            <InArgument x:TypeArguments="x:Boolean" />
+                                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                        </uix:VerifyExecutionTypeIntoOptions>
+                                      </uix:NTypeInto.VerifyOptions>
+                                    </uix:NTypeInto>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login to Terminal'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,244.8" sap2010:WorkflowViewState.IdRef="NClick_25" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="07bc3fbc-510e-4dfb-965c-3560f67edcd4" Version="V5">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="127.0.0.1/bank.html" ContentHash="tzMCZjcqvU-mvYP2KXctSw" DesignTimeRectangle="730, 827, 478, 70" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='loginBtn' tag='BUTTON' /&gt;" Guid="9c945f8b-46e9-4b23-8221-5b099345b393" InformativeScreenshot="49c2789a77d9df21fd32c1e3d5435756.jpg" Reference="JSRJTH-AA0G_ao_gmMknsg/H65JOJjugUmyIcI1myuOkw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SecureBank | RPA Virtual Terminal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Account Number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,296.8" sap2010:WorkflowViewState.IdRef="NTypeInto_42" InteractionMode="SameAsCard" ScopeIdentifier="07bc3fbc-510e-4dfb-965c-3560f67edcd4" Text="[CurrentRow(&quot;AccountNo&quot;).ToString]" Version="V5">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="127.0.0.1/bank.html" ContentHash="1xWgPo-4xUO0jydHGaHXVg" DesignTimeRectangle="690, 504, 558, 72" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='accInput' tag='INPUT' type='text' class='w-full p-4 bg-slate-50 border border-slate-200 rounded-2xl outline-none focus:ring-2 focus:ring-blue-500 font-mono' placeholder='Enter 10-digit account' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="8068ca67-7a3c-4b18-92a4-4c2a0506a2cf" InformativeScreenshot="dd958017ac24bc90745c48b875d55d74.jpg" IsResponsive="True" Reference="JSRJTH-AA0G_ao_gmMknsg/XvwFBSV4JUaMAx6FaLVusQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SecureBank | RPA Virtual Terminal' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target DesignTimeRectangle="690, 469, 558, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='block text-sm font-bold text-slate-700 mb-2' aaname='Account Number' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Account Number' /&gt;" Guid="e6b6ff5a-103b-4967-803b-98b1ecfa547b" SearchSteps="FuzzySelector" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                      <uix:NTypeInto.VerifyOptions>
+                                        <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                            <InArgument x:TypeArguments="x:Boolean" />
+                                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                        </uix:VerifyExecutionTypeIntoOptions>
+                                      </uix:NTypeInto.VerifyOptions>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Amount (INR)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,296.8" sap2010:WorkflowViewState.IdRef="NTypeInto_43" InteractionMode="SameAsCard" ScopeIdentifier="07bc3fbc-510e-4dfb-965c-3560f67edcd4" Text="[CurrentRow(&quot;Amount&quot;).ToString]" Version="V5">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="127.0.0.1/bank.html" ContentHash="JCo87yG67EqxtgQVDyGCxg" DesignTimeRectangle="690, 641, 558, 77" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='amtInput' tag='INPUT' type='number' class='w-full p-4 bg-slate-50 border border-slate-200 rounded-2xl outline-none focus:ring-2 focus:ring-blue-500 font-bold text-lg' placeholder='0.00' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="4e13c98d-bf1a-4d5f-8de9-301cd7573fdd" InformativeScreenshot="4e705d8634e515ae8eb8a3c3d0f85eb4.jpg" IsResponsive="True" Reference="JSRJTH-AA0G_ao_gmMknsg/g_jkDcOY_EquoiA_8h010w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SecureBank | RPA Virtual Terminal' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target DesignTimeRectangle="690, 606, 558, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Amount (INR)' tag='LABEL' type='' class='block text-sm font-bold text-slate-700 mb-2' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Amount (INR)' /&gt;" Guid="928b575f-1553-4c62-9080-7ceadc55808f" SearchSteps="FuzzySelector" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                      <uix:NTypeInto.VerifyOptions>
+                                        <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                            <InArgument x:TypeArguments="x:Boolean" />
+                                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                        </uix:VerifyExecutionTypeIntoOptions>
+                                      </uix:NTypeInto.VerifyOptions>
+                                    </uix:NTypeInto>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0.2" DisplayName="Click 'Transaction Type'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,244.8" sap2010:WorkflowViewState.IdRef="NClick_26" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="07bc3fbc-510e-4dfb-965c-3560f67edcd4" Version="V5">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="127.0.0.1/bank.html" ContentHash="fGY1lOtOYkKD_MViYmF4PA" DesignTimeRectangle="690, 783, 558, 66" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='typeInput' tag='SELECT' type='' class='w-full p-4 bg-slate-50 border border-slate-200 rounded-2xl outline-none focus:ring-2 focus:ring-blue-500 font-medium' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="31a2cdd4-a631-4ac6-8fd9-ef746426b85b" InformativeScreenshot="ec9335632e02c0b3a46b3b8a00c49761.jpg" Reference="JSRJTH-AA0G_ao_gmMknsg/4BymUiw17020zYA4teQbGA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SecureBank | RPA Virtual Terminal' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target DesignTimeRectangle="690, 748, 558, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Transaction Type' tag='LABEL' type='' class='block text-sm font-bold text-slate-700 mb-2' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Transaction Type' /&gt;" Guid="ef2c7ebf-86bd-4136-b014-ec4a5237edc6" SearchSteps="FuzzySelector" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="486.4,122.4" sap2010:WorkflowViewState.IdRef="Delay_19" />
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Transaction Type'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,296.8" sap2010:WorkflowViewState.IdRef="NTypeInto_44" InteractionMode="SameAsCard" ScopeIdentifier="07bc3fbc-510e-4dfb-965c-3560f67edcd4" Text="[CurrentRow(&quot;Type&quot;).ToString + &quot;[k(enter)]&quot;]" Version="V5">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="127.0.0.1/bank.html" ContentHash="fGY1lOtOYkKD_MViYmF4PA" DesignTimeRectangle="690, 783, 558, 66" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='typeInput' tag='SELECT' type='' class='w-full p-4 bg-slate-50 border border-slate-200 rounded-2xl outline-none focus:ring-2 focus:ring-blue-500 font-medium' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="31a2cdd4-a631-4ac6-8fd9-ef746426b85b" InformativeScreenshot="ec9335632e02c0b3a46b3b8a00c49761.jpg" Reference="JSRJTH-AA0G_ao_gmMknsg/4BymUiw17020zYA4teQbGA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SecureBank | RPA Virtual Terminal' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target DesignTimeRectangle="690, 748, 558, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Transaction Type' tag='LABEL' type='' class='block text-sm font-bold text-slate-700 mb-2' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Transaction Type' /&gt;" Guid="ef2c7ebf-86bd-4136-b014-ec4a5237edc6" SearchSteps="FuzzySelector" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                      <uix:NTypeInto.VerifyOptions>
+                                        <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                            <InArgument x:TypeArguments="x:Boolean" />
+                                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                        </uix:VerifyExecutionTypeIntoOptions>
+                                      </uix:NTypeInto.VerifyOptions>
+                                    </uix:NTypeInto>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit Transaction'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,244.8" sap2010:WorkflowViewState.IdRef="NClick_27" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="07bc3fbc-510e-4dfb-965c-3560f67edcd4" Version="V5">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="127.0.0.1/bank.html" ContentHash="v1fgnYS4ZkuqV-Hi-G93bg" DesignTimeRectangle="690, 879, 558, 80" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='processBtn' tag='BUTTON' /&gt;" Guid="912c17ac-c094-4205-a737-566a20c12cf4" InformativeScreenshot="2e004c35d92b2e3df62261f78c82a703.jpg" Reference="JSRJTH-AA0G_ao_gmMknsg/21t6chI320KFLfebJyCWAA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SecureBank | RPA Virtual Terminal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <If Condition="[CDbl(CurrentRow(&quot;Amount&quot;))&gt;1000000]" sap:VirtualizedContainerService.HintSize="486.4,1400.8" sap2010:WorkflowViewState.IdRef="If_16">
+                                      <If.Then>
+                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="484.8,296" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="451.2,122.4" sap2010:WorkflowViewState.IdRef="MessageBox_22" Text="[&quot;Transaction amount exceeds limit&quot;]" />
+                                          <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="451.2,113.6" sap2010:WorkflowViewState.IdRef="Delay_20" />
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="484.8,975.2" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <If Condition="[CDbl(CurrentRow(&quot;Amount&quot;))&gt;CDbl(CurrentRow(&quot;Balance&quot;))]" sap:VirtualizedContainerService.HintSize="451.2,915.2" sap2010:WorkflowViewState.IdRef="If_17">
+                                            <If.Then>
+                                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,296" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="MessageBox_23" Text="[&quot;Insufficient Balance&quot;]" />
+                                                <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="416,113.6" sap2010:WorkflowViewState.IdRef="Delay_21" />
+                                              </Sequence>
+                                            </If.Then>
+                                            <If.Else>
+                                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,489.6" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <uix:NGetText DisplayName="Get Text 'TXN6749789546'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NGetText_10" ScopeIdentifier="07bc3fbc-510e-4dfb-965c-3560f67edcd4" TextString="[txnID]" Version="V5">
+                                                  <uix:NGetText.Target>
+                                                    <uix:TargetAnchorable BrowserURL="127.0.0.1/bank.html" ContentHash="C4WKXkAjc0ymBl53G-MgBg" DesignTimeRectangle="375, 492, 164, 30" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='resID' tag='SPAN' /&gt;" Guid="9a78a7be-6d59-46a3-a495-2c88838eeed3" InformativeScreenshot="469f58fda519385f396f4464395d63f7.jpg" Reference="JSRJTH-AA0G_ao_gmMknsg/_bKBCPu5DE29vMR5RoR4kA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SecureBank | RPA Virtual Terminal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                                  </uix:NGetText.Target>
+                                                </uix:NGetText>
+                                                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="MessageBox_24" Text="[&quot;Transaction Succesful! ID:  &quot;+txnID]" />
+                                                <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="416,113.6" sap2010:WorkflowViewState.IdRef="Delay_22" />
+                                              </Sequence>
+                                            </If.Else>
+                                          </If>
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
+                                  </Sequence>
+                                </ActivityAction>
+                              </ui:ForEachRow.Body>
+                            </ui:ForEachRow>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelProcessScopeX.Body>
+            </ueab:ExcelProcessScopeX>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="648, 156, 1023, 606" BrowserType="Chrome" ContentHash="nwMy65wIa0GWWwXNQ24Yjg" IconBase64="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" InformativeScreenshot="573da22ff96407539e5d1eb98852367f.jpg" Reference="JSRJTH-AA0G_ao_gmMknsg/uA4_2BQH90-EiqAK9vklaw" Selector="&lt;html app='chrome.exe' title='SecureBank | RPA Virtual Terminal' /&gt;" Url="file:///C:/Users/sunid/OneDrive/Desktop/rpa/bank.html" Version="V2">
+          <uix:TargetApp.Arguments>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.Arguments>
+          <uix:TargetApp.WorkingDirectory>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.WorkingDirectory>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

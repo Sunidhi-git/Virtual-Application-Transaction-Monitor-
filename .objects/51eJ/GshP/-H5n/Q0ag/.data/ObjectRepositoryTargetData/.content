@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="aogygdlddEOwKKAlcxUkzA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="127.0.0.1/bank.html" DesignTimeRectangle="730, 735, 478, 72" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='pass' tag='INPUT' /&gt;" Guid="e15f50e0-8cbd-41ce-b737-d7956cf974c2" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SecureBank | RPA Virtual Terminal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="785fa8fdeb95dc31715425fe09255b3a.jpg" xmlns="">0y3AibtMthk-vBgexBwtBFA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

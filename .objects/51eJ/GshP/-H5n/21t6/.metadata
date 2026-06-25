@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Submit Transaction",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "21t6chI320KFLfebJyCWAA",
+  "Reference": "JSRJTH-AA0G_ao_gmMknsg/21t6chI320KFLfebJyCWAA",
+  "ParentRef": "JSRJTH-AA0G_ao_gmMknsg/-H5nEKv4wUWYBbNDvKIVhg",
+  "Created": "2026-03-24T13:55:17.014219Z",
+  "Updated": "2026-03-24T13:55:17.014219Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

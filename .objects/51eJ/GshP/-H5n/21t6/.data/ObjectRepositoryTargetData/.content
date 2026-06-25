@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="v1fgnYS4ZkuqV-Hi-G93bg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="127.0.0.1/bank.html" DesignTimeRectangle="690, 879, 558, 80" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='processBtn' tag='BUTTON' /&gt;" Guid="912c17ac-c094-4205-a737-566a20c12cf4" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SecureBank | RPA Virtual Terminal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="2e004c35d92b2e3df62261f78c82a703.jpg" xmlns="">0RloeF-iAMESD_M0LTue9Hw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

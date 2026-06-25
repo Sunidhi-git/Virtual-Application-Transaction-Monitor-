@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Amount (INR)",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "g_jkDcOY_EquoiA_8h010w",
+  "Reference": "JSRJTH-AA0G_ao_gmMknsg/g_jkDcOY_EquoiA_8h010w",
+  "ParentRef": "JSRJTH-AA0G_ao_gmMknsg/-H5nEKv4wUWYBbNDvKIVhg",
+  "Created": "2026-03-24T13:31:53.2896965Z",
+  "Updated": "2026-03-24T13:31:53.2896965Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
