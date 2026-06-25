@@ -37,6 +37,12 @@ Transaction Validation
     │
 Transaction ID Capture & Display
 
+## UiPath Implementation
+
+The following screenshot shows the actual UiPath workflow developed for the project.
+
+![UiPath Workflow](.screenshots/image.png)
+
 ## Methodology
 
 1. Launch the virtual banking application.
@@ -58,6 +64,12 @@ Transaction ID Capture & Display
 - Transaction monitoring
 - Multiple test case validation
   
+## Workflow Diagram
+
+The following diagram illustrates the complete UiPath workflow for processing transactions from Excel and handling different transaction scenarios.
+
+![Workflow Diagram](.screenshots/uifi.jpg)
+
 ## Test Cases and Results
 
 ### 1. Successful Transaction
